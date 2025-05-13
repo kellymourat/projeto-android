@@ -196,7 +196,7 @@ aside > ul {
      list-style-position: inside; /* position da lista, para dentro da box*/
      columns: 2; /* divisão dda coluna em duas partes */
 }
-@media (max-width: 600px) { /* configuração usada para lista virar uma só em telas pequenas*/
+@media (max-width: 387px) { /* configuração usada para lista virar uma só em telas pequenas*/
   aside > ul {
     columns: 1;
   }
