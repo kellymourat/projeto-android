@@ -125,7 +125,6 @@ main h2 {
 main p {
       padding: 10px 0px; /* distância do texto para o título princípal*/
       text-align: justify; /* organiza o texto */
-      hyphens: auto;
       text-indent: 16px;  /* indentação no paragrafo*/
       font-size: 1em;    /* tamanho da fonte*/
       line-height: 2em; /* distância entre texto*/
@@ -175,7 +174,8 @@ div.video > iframe {
 
 aside {
       background-color:  #97e26ba1;
-      margin: 0px -20px 30px -20px;
+      max-width: 800px;
+      margin: auto;
       padding: 10px;
       border-radius: 10px;
       box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.178);
@@ -183,7 +183,7 @@ aside {
 
 aside h3 {
       background-image: linear-gradient(to right, #a7e285, transparent);
-      color:   var(--cor5);
+      color: var(--cor5);
       font-family: var(--font-android);
       padding: 10px;
       margin: -10px -10px -0px -10px; /*ocupando a parte superior e lateral da box */
@@ -192,9 +192,14 @@ aside h3 {
 
 aside > ul {
      color: rgb(14, 13, 13);
-     list-style-type: '\2714\00A0\00A0'; /* aplica o sinal check, formando um pequeno espaço entro o sinal e o conteúdo.*/
+     list-style-type:'\2714'; /* aplica o sinal check, formando um pequeno espaço entro o sinal e o conteúdo.*/
      list-style-position: inside; /* position da lista, para dentro da box*/
      columns: 2; /* divisão dda coluna em duas partes */
+}
+@media (max-width: 600px) { /* configuração usada para lista virar uma só em telas pequenas*/
+  aside > ul {
+    columns: 1;
+  }
 }
 
 .mascote {
