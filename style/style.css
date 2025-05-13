@@ -47,45 +47,41 @@ a.externo::after{
 } 
 
 header { 
-
       background-image: linear-gradient(to bottom,#0e0d0d,#527dec56);
       min-height: 150px; 
       text-align: center;
       padding-top: 40px; 
-      
-
 }
 
 header > h1 {
       color: rgb(255, 255, 255); 
       font-family: var(--font-android);
-      font-size: 2.4em;
+      font-size: 3em;
       font-weight: normal; /* sem negrito*/
-      margin-bottom: 10px; /* distância do sub título para o título principal*/ 
-      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.459);
-       
+      margin-bottom: 20px; /* distância do sub título para o título principal*/ 
+      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.459);       
 }
 
 header > p {
-      color:  white;
-      font-family: var(--font-google);
-      font-size: 1.4em;
-      max-width: 600px; /*faz com que o texto quebre, porém não ficou alinhado ao meio */
-      padding-right: 7px; /* texto adaptado conforme a tela diminue*/
+      font-family: unset;
+      font-size: 1.2em;
+      color:  rgb(255, 255, 255);
+      max-width: 600px; /*Texto alinhado ao meio */
+      padding-right: 10px; /* texto adaptado conforme a tela diminue*/
+      padding-left: 10px; 
       margin: auto; /* texto centralizado ao meio */
-      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.075);
-      text-size-adjust: aut;
-
+      padding-bottom: 50px; /* distância do texto para o menu*/
+      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.075); 
 }
 
 nav {
       background-image: linear-gradient(to left, var(--cor8), var(--cor7));
-      padding: 10px; /* menu, mas gordinho em todos lados*/
-      box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.288);
+      padding: 10px; /* menu mais gordinho em todos lados*/
+      box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
 
 }
 nav > a {
-      color: rgb(206, 221, 245); /* cor do texto*/
+      color: rgb(255, 255, 255); /* cor do texto*/
       padding: 10px;
       text-decoration: none;
       text-indent: 6px;
@@ -98,18 +94,16 @@ nav > a:hover {
      animation: pulsate 1s ease-in-out; /* menu com botão pulsante  */
 }
 
-
-main { /* Configuração para realizar, uma box para todo conteúdo do site. esse confg tem que estar em ordem correta, senão não vai funcionar. */
+main { /* Configuração do conteúdo principal. */
      min-width: 200px; 
      max-width: 800px;
      margin: auto; /* box centralizada no meio do site*/
-     margin-bottom: 20px;   
+     margin-bottom: 15px;   
      background-color: rgb(248, 252, 251);
      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);       
-     padding: 30px;
-     border-bottom-left-radius: 10px; /* borda- baixo- querdo */
+     padding: 20px;
+     border-bottom-left-radius: 10px; /* borda- baixo- esquerdo */
      border-bottom-right-radius: 10px;  /* borda- baixo- direito*/
-
 }
 
 main h1 {
@@ -126,33 +120,31 @@ main h2 {
       font-weight: normal; /* sem negrito*/
       background-image: linear-gradient(to right, var(--cor8), transparent);
       text-indent: 8px; /* distância do paragrafo*/
-
 }
 
 main p {
-      margin: 15px 0px; /* distância do texto para o título princípal*/
-      text-align: justify; /* organiza o texto melhor */
-      text-indent: 30px;  /* indentação no paragrafo*/
+      padding: 10px 0px; /* distância do texto para o título princípal*/
+      text-align: justify; /* organiza o texto */
+      hyphens: auto;
+      text-indent: 16px;  /* indentação no paragrafo*/
       font-size: 1em;    /* tamanho da fonte*/
       line-height: 2em; /* distância entre texto*/
 
 }
 main strong {
-      color: #1b583f;
-    
+      color: #1a4633;    
 }
 
 main a {
       text-decoration: none;
       font-weight: bold;  /* torna o texto negrito */
       color: var(--cor4);
-      background-color: rgb(214, 250, 225);
+      background-color: rgba(163, 241, 153, 0.692);
       padding: 2px 6px; /* box maior nas laterais */
 }
 main a:hover{
       text-decoration: underline;
       color: var(--cor3);
-
 }
 
 main img {
@@ -164,7 +156,6 @@ main img.pequena {
      max-width: 350px; /* tamanho da img, reduzida em 350% */ 
      display: block;
      margin: auto; /* img centralizada ao meio.*/
-
 }
 div.video {
       background-color:#97e26b;
@@ -172,8 +163,8 @@ div.video {
       padding: 20px;
       padding-bottom: 58%;
       position: relative;
-
 }
+
 div.video > iframe {
       position: absolute;
       top: 5%;
@@ -184,6 +175,7 @@ div.video > iframe {
 
 aside {
       background-color:  #97e26ba1;
+      margin: 0px -20px 30px -20px;
       padding: 10px;
       border-radius: 10px;
       box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.178);
@@ -196,21 +188,20 @@ aside h3 {
       padding: 10px;
       margin: -10px -10px -0px -10px; /*ocupando a parte superior e lateral da box */
       border-radius: 10px 10px 0px 0px; /* arredondamento das margens superiores*/
-
 }
+
 aside > ul {
      color: rgb(14, 13, 13);
      list-style-type: '\2714\00A0\00A0'; /* aplica o sinal check, formando um pequeno espaço entro o sinal e o conteúdo.*/
      list-style-position: inside; /* position da lista, para dentro da box*/
      columns: 2; /* divisão dda coluna em duas partes */
-
 }
+
 .mascote {
       width: 100%; 
       max-width: 350px; /* tamanho da img, reduzida em 350% */ 
       display: block;
       margin: auto; /* img centralizada ao meio.*/
-
 }
 
 footer {
@@ -230,5 +221,9 @@ footer a:hover{
       text-decoration: underline;
       color: #28dd77;
 }
-
-
+.saudacoes{
+      background-color: #162855;
+      color: #ffffff;
+      border-radius: 15px;
+      text-align: center;
+}
