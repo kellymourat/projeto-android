@@ -15,8 +15,6 @@ Ele foi criado pela designer Irina Blok com o objetivo de ser acessível, divert
 Hoje, o bonequinho verde virou um dos símbolos mais reconhecidos no mundo da tecnologia.
 No site, incluí links para os materiais e fontes oficiais usados na construção dessa narrativa.
 
-## Como acessar
-Você pode visualizar o projeto neste link:
-👉 (https://kellymourat.github.io/projeto-android/)
+
 
 
