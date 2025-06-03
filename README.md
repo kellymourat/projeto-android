@@ -31,3 +31,5 @@ Projeto desenvolvido para aplicar conceitos fundamentais de HTML5 e CSS3, focado
 
 Conteúdo e imagens baseados em fontes oficiais e artigos confiáveis sobre a história do mascote Android.
 Links para as referências estão disponíveis na página para consulta.
+
+Confira o Projeto 👉 [Acesse](https://kellymourat.github.io/projeto-android/)
