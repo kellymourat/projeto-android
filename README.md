@@ -1,4 +1,4 @@
-# Projeto Android – Prática com HTML e CSS
+# Projeto Android :robot: – Prática com HTML e CSS
 
 ## Descrição
 
